@@ -55,8 +55,8 @@ function getNodes() {
 function nodeCoords(nodeId) {
   return getNodes()[nodeId];
 }
-
-var map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([44.98, -93.25], 14);
+L.mapbox.accessToken = 'pk.eyJ1IjoiYWhscXVpc3RrZCIsImEiOiJjaWd1NnFueXYwMDVodmptNWFsdzJuM3gwIn0.DyIlapEuO6U2y4UI8_0zFg';
+var map = L.mapbox.map('map', 'mapbox.streets').setView([44.98, -93.25], 14);
 var markers = new L.MarkerClusterGroup();
 
 function updateLegend(map, nodes, progress) {
